@@ -1,7 +1,24 @@
 aid: trayd
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/trayd.png
 name: Trayd
-description: Trayd is a company surfaced as a portfolio company of bloomberg-beta and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: Trayd is a construction payroll, HR, and compliance platform built for commercial trade
+  contractors and subcontractors. It automates certified and prevailing-wage payroll, union and
+  multi-state compliance reporting, field and labor tracking, crew scheduling and dispatch, HR
+  onboarding and benefits, and offers same-day pay, moving tens of millions of payroll dollars each
+  week. Founded in 2022 (Y Combinator S23) and backed by Bloomberg Beta, Trayd operates a
+  private SaaS and mobile application with no public developer API, documentation, or integration
+  surface published at this time.
 url: https://raw.githubusercontent.com/api-evangelist/trayd/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,9 +28,15 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-21'
 tags:
 - Company
+- Construction
+- Payroll
+- HR
+- Compliance
+- Fintech
+- Workforce Management
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -21,5 +44,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/trayd-domain-security.yml
 - type: Website
   url: https://www.buildtrayd.com/
+- type: Blog
+  url: https://www.buildtrayd.com/blog
+- type: TermsOfService
+  url: https://www.buildtrayd.com/terms-of-use
+- type: PrivacyPolicy
+  url: https://www.buildtrayd.com/privacy-policy
+x-enrichment:
+  date: '2026-07-21'
+  status: minimal
+  artifacts_added: 1
+  pass: local-v1
